@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <router-link :to="{ name: 'login' }" class="navbar-brand mx-3"
+    <router-link :to="{ name: 'dashboard' }" class="navbar-brand mx-3"
       >LARAVEL PASSPORT + VUE</router-link
     >
     <button
