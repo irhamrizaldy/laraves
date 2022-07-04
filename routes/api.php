@@ -23,3 +23,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/register', [RegisterController::class, 'register']);
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->middleware('auth:api');
+Route::get('/provinces', [RajaOngkirController::class, 'getProvinces']);
+Route::get('/cities/{id}', [RajaOngkirController::class, 'getCities']);
+Route::post('/checkOngkir', [RajaOngkirController::class, 'checkOngkir']);

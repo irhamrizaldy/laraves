@@ -25,6 +25,11 @@ const routes = [
                 /* webpackChunkName: "dashboard" */ "@/views/dashboard/Index.vue"
             ),
     },
+    {
+        path: "/cek-ongkir",
+        name: "cek-ongkir",
+        component: () => import("@/views/dashboard/CekOngkir.vue"),
+    },
 ];
 
 //create router
